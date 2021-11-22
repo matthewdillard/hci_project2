@@ -1,16 +1,23 @@
 // create 2 data_set
 var data1 = [
-  {group: "A", value: 4},
-  {group: "B", value: 16},
-  {group: "C", value: 8}
+  {group: "Puerto Rico", value: 7.17},
+  {group: "Myanmar", value: 10.00},
+  {group: "Haiti", value: 13.67}
+  {group: "Philippines", value: 18.17}
+  {group: "Mozambique", value: 25.83}
+  {group: "The Bahamas", value: 27.67}
+  {group: "Bangladesh", value: 28.33}
+  {group: "Pakistan", value: 29.00}
+  {group: "Thailand", value: 29.83}
+  {group: "Nepal", value: 13.33}
 ];
-
-var data2 = [
-  {group: "A", value: 7},
-  {group: "B", value: 1},
-  {group: "C", value: 20},
-  {group: "D", value: 10}
-];
+//
+// var data2 = [
+//   {group: "A", value: 7},
+//   {group: "B", value: 1},
+//   {group: "C", value: 20},
+//   {group: "D", value: 10}
+// ];
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
