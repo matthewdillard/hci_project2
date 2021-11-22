@@ -2,26 +2,26 @@
 var data1 = [
   {group: "Puerto Rico", value: 7.17},
   {group: "Myanmar", value: 10.00},
-  {group: "Haiti", value: 13.67}
-  {group: "Philippines", value: 18.17}
-  {group: "Mozambique", value: 25.83}
-  {group: "The Bahamas", value: 27.67}
-  {group: "Bangladesh", value: 28.33}
-  {group: "Pakistan", value: 29.00}
-  {group: "Thailand", value: 29.83}
+  {group: "Haiti", value: 13.67},
+  {group: "Philippines", value: 18.17},
+  {group: "Mozambique", value: 25.83},
+  {group: "The Bahamas", value: 27.67},
+  {group: "Bangladesh", value: 28.33},
+  {group: "Pakistan", value: 29.00},
+  {group: "Thailand", value: 29.83},
   {group: "Nepal", value: 13.33}
 ];
 
 var data2 = [
   {group: "Puerto Rico", value: 4.12},
   {group: "Myanmar", value: 14.35},
-  {group: "Haiti", value: 2.78}
-  {group: "Philippines", value: 0.93}
-  {group: "Mozambique", value: 0.52}
-  {group: "The Bahamas", value: 1.56}
-  {group: "Bangladesh", value: 0.38}
-  {group: "Pakistan", value: 0.30}
-  {group: "Thailand", value: 0.21}
+  {group: "Haiti", value: 2.78},
+  {group: "Philippines", value: 0.93},
+  {group: "Mozambique", value: 0.52},
+  {group: "The Bahamas", value: 1.56},
+  {group: "Bangladesh", value: 0.38},
+  {group: "Pakistan", value: 0.30},
+  {group: "Thailand", value: 0.21},
   {group: "Nepal", value: 0.82}
 ];
 
