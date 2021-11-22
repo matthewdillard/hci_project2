@@ -122,8 +122,7 @@ function update(data) {
 
   u
     .enter()
-    .append("rect") // Add a new rect for each new elements
-      .style("border-radius", "5px")
+    .append("rect") // Add a new rect for each new element
     .merge(u) // get the already existing elements as well
     .transition() // and apply changes to all of them
     .duration(1000)
@@ -132,6 +131,9 @@ function update(data) {
     .attr("width", x.bandwidth())
     .attr("height", function(d) { return height - y(d.value); })
     .attr("fill", "darkblue")
+    .style("stroke", "black")
+    .style("border-radius", 40)
+    .style("opacity", 0.8)
 
   // If less group in the new dataset, I delete the ones not in use anymore
   u
