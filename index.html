@@ -43,7 +43,7 @@
 </p>
 
 <div class="button-row">
-  <button class="chart-button" id="cri_button" name="cri_button" onclick="update(cri_data)">CRI Score</button>
+  <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
   <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
   <button class="chart-button" onclick="update(fatal_100_data)">Fatalities per 100K</button>
   <button class="chart-button" onclick="update(losses_1M)">Losses in Millions $</button>
@@ -72,7 +72,9 @@
 </p>
 
 <script src="https://d3js.org/d3.v4.js"></script>
-<script src="js/main.js"></script>
 <script src="js/cri_chart.js"></script>
+<script type="text/javascript">
+  document.getElementById("cri_button").click();
+</script>
 </body>
 </html>
