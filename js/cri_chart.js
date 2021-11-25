@@ -79,7 +79,7 @@ var num_events = [
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
-  width = 700 - margin.left - margin.right,
+  width = 900 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -94,9 +94,10 @@ var svg = d3.select("#my_dataviz")
 // Initialize the X axis
 var x = d3.scaleBand()
   .range([ 0, width ])
-  .padding(0.2);
+  .padding(0.3);
 var xAxis = svg.append("g")
   .attr("transform", "translate(0," + height + ")")
+  .style("color", "#f9d976")
 
 // Initialize the Y axis
 var y = d3.scaleLinear()
@@ -130,10 +131,8 @@ function update(data) {
     .attr("y", function(d) { return y(d.value); })
     .attr("width", x.bandwidth())
     .attr("height", function(d) { return height - y(d.value); })
-    .attr("fill", "darkblue")
-    .style("stroke", "black")
-    .style("border-radius", 40)
-    .style("opacity", 0.8)
+    .attr("fill", "#f9d976")
+    .style("border-radius", 100)
 
   // If less group in the new dataset, I delete the ones not in use anymore
   u
