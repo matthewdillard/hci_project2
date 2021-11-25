@@ -32,9 +32,18 @@
 <h2>Who's sowing, and who's reaping</h2>
 
 
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis lacus eu ligula vulputate gravida. Morbi
+  vitae feugiat mauris. Nulla varius orci eget massa convallis bibendum. Ut ante mi, vehicula ut turpis malesuada,
+  congue ullamcorper ante. Mauris id velit nunc. Mauris non lacus velit. Aenean ligula mauris, tincidunt in lacus a,
+  dictum vehicula nulla. Nunc eu sem quis velit imperdiet congue non vel dui. Donec justo est, hendrerit vel justo eu,
+  maximus fringilla lectus. Nunc non bibendum dolor. Nulla at pharetra orci. Suspendisse ut consequat augue. Integer
+  et elit eu purus faucibus euismod. Phasellus ut imperdiet magna. Donec eget congue nisi. Aliquam ut lacinia ante,
+  sed suscipit ante.
+</p>
 
 <div class="button-row">
-  <button class="chart-button" onclick="update(cri_data)">CRI Score</button>
+  <button class="chart-button" id="cri_button" name="cri_button" onclick="update(cri_data)">CRI Score</button>
   <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
   <button class="chart-button" onclick="update(fatal_100_data)">Fatalities per 100K</button>
   <button class="chart-button" onclick="update(losses_1M)">Losses in Millions $</button>
@@ -42,10 +51,25 @@
   <button class="chart-button" onclick="update(num_events)">Number of Events</button>
 </div>
 
-
-
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
+
+<p>
+  Nam ut nunc at arcu vehicula placerat at condimentum odio. Duis sed neque vehicula leo aliquam mollis id a neque.
+  Proin malesuada eros a leo efficitur posuere. Donec consequat purus purus, quis faucibus dui faucibus et. In ut odio
+  vel lacus bibendum sagittis. Duis aliquam mi eu ipsum consequat volutpat. Nulla malesuada velit consequat ornare
+  commodo. Praesent vel scelerisque justo. Morbi sodales eget ligula ac suscipit. Proin vehicula egestas dignissim.
+  Sed arcu massa, sollicitudin eu orci ut, hendrerit dignissim purus. In at mauris id massa gravida fermentum. Integer
+  finibus fermentum enim sed ullamcorper.
+</p>
+<p>
+  Nulla congue fringilla enim, sed tincidunt nunc pulvinar vel. Maecenas elementum in elit et vulputate. Ut nec risus
+  non nulla sollicitudin tincidunt. Nullam posuere congue sodales. Cras porttitor commodo purus, vitae rhoncus ipsum
+  imperdiet nec. Sed condimentum libero ut quam sagittis sollicitudin. Morbi vestibulum lectus ac maximus sollicitudin.
+  Pellentesque maximus malesuada sapien eget fermentum. Integer odio nibh, mattis ut rhoncus id, bibendum et erat.
+  Mauris massa mi, laoreet et ex vitae, bibendum ultrices leo. Nam sit amet feugiat sem. Proin quam arcu, finibus a
+  lorem a, lobortis efficitur arcu. Donec eget volutpat turpis. Vestibulum auctor quis orci vel volutpat.
+</p>
 
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="js/main.js"></script>

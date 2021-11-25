@@ -1,4 +1,3 @@
-// create 2 data_set
 var cri_data = [
   {group: "Puerto Rico", value: 7.17, color: "#db545a"},
   {group: "Myanmar", value: 10.00, color: "yellow"},

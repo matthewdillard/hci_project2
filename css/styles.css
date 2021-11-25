@@ -45,7 +45,13 @@ h2 {
   font-weight: bold;
 }
 
+hr {
+  color: var(--primary-color);
+}
+
+
 .button-row {
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: left;
