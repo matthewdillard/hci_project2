@@ -16,11 +16,9 @@
   <meta property="og:description" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 
@@ -42,10 +40,6 @@
   sed suscipit ante.
 </p>
 
-<img src=”img/animated_choropleth_pollution.html”>
-
-
-
 <div class="button-row">
   <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
   <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
@@ -57,6 +51,21 @@
 
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
+
+<hr>
+
+<div id="emissions"></div>
+<script>
+  $( "#emissions" ).load( "img/animated_choropleth_emission.html");
+</script>
+
+<div id="pollution"></div>
+<script>
+  $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
+</script>
+
+<!--<object type="text/html" data="img/test.html"></object>-->
+<!--<link rel="import" href="img/test.html">-->
 
 <p>
   Nam ut nunc at arcu vehicula placerat at condimentum odio. Duis sed neque vehicula leo aliquam mollis id a neque.
