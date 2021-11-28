@@ -130,7 +130,7 @@ function update(data) {
     .attr("y", function(d) { return y(d.value); })
     .attr("width", x.bandwidth())
     .attr("height", function(d) { return height - y(d.value); })
-    .attr("fill", "#f9d976")
+    .attr("fill", "teal")
     .style("border-radius", 100)
 
   // If less group in the new dataset, I delete the ones not in use anymore
