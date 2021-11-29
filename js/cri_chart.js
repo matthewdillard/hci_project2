@@ -78,7 +78,7 @@ var num_events = [
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
-  width = 1000 - margin.left - margin.right,
+  width = 750 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -134,7 +134,7 @@ function update(data) {
     .attr("y", function(d) { return y(d.value); })
     .attr("width", x.bandwidth())
     .attr("height", function(d) { return height - y(d.value); })
-    .attr("fill", "teal")
+    .attr("fill", "#014B64")
 
 
   // If less group in the new dataset, I delete the ones not in use anymore

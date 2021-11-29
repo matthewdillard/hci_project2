@@ -19,82 +19,89 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
 
 </head>
 
 <body>
-<h1> CLIMATE CHANGE </h1>
+<div class="_content">
+  <h1> CLIMATE CHANGE </h1>
 
-<hr>
+  <hr>
 
-<h2>Who's sowing, and who's reaping</h2>
+  <h2>Who's sowing, and who's reaping</h2>
+
+  <p>
+    Climate change is an ever present worry for us all, but the reality is that the inevitable repurcussions of decades
+    of pollution will disproportionately affect developing countries: those who contributed very little to the problem
+    we as a planet currently face, and do often not have the necessary infrastructure to manage the problem. Here we see
+    CO2 emissions per capita of all countries since 1990. The predictable trend we see is that richer, more developed
+    countries contributing at much higher rates than developing countries.
+  </p>
+
+  <div id="pollution"></div>
+  <script>
+    $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
+  </script>
+
+  <p>
+    What we see in the CO2 contribution chart above is almost opposite to what we see in those countries most affected by
+    that same pollution.
+  </p>
+
+  <div id="emissions"></div>
+  <script>
+    $( "#emissions" ).load( "img/animated_choropleth_emission.html");
+  </script>
+
+  <div class="button-row">
+    <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
+    <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
+    <button class="chart-button" onclick="update(fatal_100_data)">Fatalities per 100K</button>
+    <button class="chart-button" onclick="update(losses_1M)">Losses in Millions $</button>
+    <button class="chart-button" onclick="update(losses_GDP)">Losses per unit GDP</button>
+    <button class="chart-button" onclick="update(num_events)">Number of Events</button>
+  </div>
+
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz"></div>
+
+  <div id="chartdiv"></div>
+
+  <hr>
 
 
-<p>
-  Climate change is an ever present worry for us all, but the reality is that the inevitable repurcussions of decades
-  of pollution will disproportionately affect developing countries: those who contributed very little to the problem
-  we as a planet currently face, and do often not have the necessary infrastructure to manage the problem. Here we see
-  CO2 emissions per capita of all countries since 1990. The predictable trend we see is that richer, more developed
-  countries contributing at much higher rates than developing countries.
-</p>
 
-<div id="pollution"></div>
-<script>
-  $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
-</script>
 
-<p>
-  What we see in the CO2 contribution chart above is almost opposite to what we see in those countries most affected by
-  that same pollution.
-</p>
 
-<div id="emissions"></div>
-<script>
-  $( "#emissions" ).load( "img/animated_choropleth_emission.html");
-</script>
+  <!--<object type="text/html" data="img/test.html"></object>-->
+  <!--<link rel="import" href="img/test.html">-->
 
-<div class="button-row">
-  <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
-  <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
-  <button class="chart-button" onclick="update(fatal_100_data)">Fatalities per 100K</button>
-  <button class="chart-button" onclick="update(losses_1M)">Losses in Millions $</button>
-  <button class="chart-button" onclick="update(losses_GDP)">Losses per unit GDP</button>
-  <button class="chart-button" onclick="update(num_events)">Number of Events</button>
+  <p>
+    Nam ut nunc at arcu vehicula placerat at condimentum odio. Duis sed neque vehicula leo aliquam mollis id a neque.
+    Proin malesuada eros a leo efficitur posuere. Donec consequat purus purus, quis faucibus dui faucibus et. In ut odio
+    vel lacus bibendum sagittis. Duis aliquam mi eu ipsum consequat volutpat. Nulla malesuada velit consequat ornare
+    commodo. Praesent vel scelerisque justo. Morbi sodales eget ligula ac suscipit. Proin vehicula egestas dignissim.
+    Sed arcu massa, sollicitudin eu orci ut, hendrerit dignissim purus. In at mauris id massa gravida fermentum. Integer
+    finibus fermentum enim sed ullamcorper.
+  </p>
+  <p>
+    Nulla congue fringilla enim, sed tincidunt nunc pulvinar vel. Maecenas elementum in elit et vulputate. Ut nec risus
+    non nulla sollicitudin tincidunt. Nullam posuere congue sodales. Cras porttitor commodo purus, vitae rhoncus ipsum
+    imperdiet nec. Sed condimentum libero ut quam sagittis sollicitudin. Morbi vestibulum lectus ac maximus sollicitudin.
+    Pellentesque maximus malesuada sapien eget fermentum. Integer odio nibh, mattis ut rhoncus id, bibendum et erat.
+    Mauris massa mi, laoreet et ex vitae, bibendum ultrices leo. Nam sit amet feugiat sem. Proin quam arcu, finibus a
+    lorem a, lobortis efficitur arcu. Donec eget volutpat turpis. Vestibulum auctor quis orci vel volutpat.
+  </p>
+
+  <script src="js/cri_chart.js"></script>
+  <script src="js/cri_global.js"></script>
+  <script type="text/javascript">
+    document.getElementById("cri_button").click();
+  </script>
 </div>
-
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-
-<hr>
-
-
-
-
-
-<!--<object type="text/html" data="img/test.html"></object>-->
-<!--<link rel="import" href="img/test.html">-->
-
-<p>
-  Nam ut nunc at arcu vehicula placerat at condimentum odio. Duis sed neque vehicula leo aliquam mollis id a neque.
-  Proin malesuada eros a leo efficitur posuere. Donec consequat purus purus, quis faucibus dui faucibus et. In ut odio
-  vel lacus bibendum sagittis. Duis aliquam mi eu ipsum consequat volutpat. Nulla malesuada velit consequat ornare
-  commodo. Praesent vel scelerisque justo. Morbi sodales eget ligula ac suscipit. Proin vehicula egestas dignissim.
-  Sed arcu massa, sollicitudin eu orci ut, hendrerit dignissim purus. In at mauris id massa gravida fermentum. Integer
-  finibus fermentum enim sed ullamcorper.
-</p>
-<p>
-  Nulla congue fringilla enim, sed tincidunt nunc pulvinar vel. Maecenas elementum in elit et vulputate. Ut nec risus
-  non nulla sollicitudin tincidunt. Nullam posuere congue sodales. Cras porttitor commodo purus, vitae rhoncus ipsum
-  imperdiet nec. Sed condimentum libero ut quam sagittis sollicitudin. Morbi vestibulum lectus ac maximus sollicitudin.
-  Pellentesque maximus malesuada sapien eget fermentum. Integer odio nibh, mattis ut rhoncus id, bibendum et erat.
-  Mauris massa mi, laoreet et ex vitae, bibendum ultrices leo. Nam sit amet feugiat sem. Proin quam arcu, finibus a
-  lorem a, lobortis efficitur arcu. Donec eget volutpat turpis. Vestibulum auctor quis orci vel volutpat.
-</p>
-
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="js/cri_chart.js"></script>
-<script type="text/javascript">
-  document.getElementById("cri_button").click();
-</script>
 </body>
 </html>
