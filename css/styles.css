@@ -74,6 +74,13 @@ hr {
   font-weight: bold;
 }
 
+.footer {
+  margin-top: 5px;
+  font-size: 13px;
+  color: darkgray;
+  text-underline: none;
+}
+
 .button-row {
   margin-top: 25px;
   display: flex;
