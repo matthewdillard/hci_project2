@@ -31,14 +31,27 @@
 
 
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis lacus eu ligula vulputate gravida. Morbi
-  vitae feugiat mauris. Nulla varius orci eget massa convallis bibendum. Ut ante mi, vehicula ut turpis malesuada,
-  congue ullamcorper ante. Mauris id velit nunc. Mauris non lacus velit. Aenean ligula mauris, tincidunt in lacus a,
-  dictum vehicula nulla. Nunc eu sem quis velit imperdiet congue non vel dui. Donec justo est, hendrerit vel justo eu,
-  maximus fringilla lectus. Nunc non bibendum dolor. Nulla at pharetra orci. Suspendisse ut consequat augue. Integer
-  et elit eu purus faucibus euismod. Phasellus ut imperdiet magna. Donec eget congue nisi. Aliquam ut lacinia ante,
-  sed suscipit ante.
+  Climate change is an ever present worry for us all, but the reality is that the inevitable repurcussions of decades
+  of pollution will disproportionately affect developing countries: those who contributed very little to the problem
+  we as a planet currently face, and do often not have the necessary infrastructure to manage the problem. Here we see
+  CO2 emissions per capita of all countries since 1990. The predictable trend we see is that richer, more developed
+  countries contributing at much higher rates than developing countries.
 </p>
+
+<div id="pollution"></div>
+<script>
+  $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
+</script>
+
+<p>
+  What we see in the CO2 contribution chart above is almost opposite to what we see in those countries most affected by
+  that same pollution.
+</p>
+
+<div id="emissions"></div>
+<script>
+  $( "#emissions" ).load( "img/animated_choropleth_emission.html");
+</script>
 
 <div class="button-row">
   <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
@@ -54,15 +67,9 @@
 
 <hr>
 
-<div id="emissions"></div>
-<script>
-  $( "#emissions" ).load( "img/animated_choropleth_emission.html");
-</script>
 
-<div id="pollution"></div>
-<script>
-  $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
-</script>
+
+
 
 <!--<object type="text/html" data="img/test.html"></object>-->
 <!--<link rel="import" href="img/test.html">-->

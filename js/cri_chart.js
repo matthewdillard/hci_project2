@@ -78,11 +78,13 @@ var num_events = [
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
-  width = 900 - margin.left - margin.right,
+  width = 1000 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
+  .style("background-color", "#ffffff")
+  .style("margin", "30px 0px")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -90,19 +92,20 @@ var svg = d3.select("#my_dataviz")
   .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
 
+
 // Initialize the X axis
 var x = d3.scaleBand()
   .range([ 0, width ])
   .padding(0.3);
 var xAxis = svg.append("g")
   .attr("transform", "translate(0," + height + ")")
-  .style("color", "#f9d976")
+
 
 // Initialize the Y axis
 var y = d3.scaleLinear()
   .range([ height, 0]);
 var yAxis = svg.append("g")
-  .attr("class", "myYaxis")
+
 
 
 // A function that create / update the plot for a given variable:
@@ -123,6 +126,7 @@ function update(data) {
   u
     .enter()
     .append("rect") // Add a new rect for each new element
+    .style("stroke", "#444444")
     .merge(u) // get the already existing elements as well
     .transition() // and apply changes to all of them
     .duration(1000)
@@ -131,7 +135,7 @@ function update(data) {
     .attr("width", x.bandwidth())
     .attr("height", function(d) { return height - y(d.value); })
     .attr("fill", "teal")
-    .style("border-radius", 100)
+
 
   // If less group in the new dataset, I delete the ones not in use anymore
   u
