@@ -58,6 +58,36 @@
     $( "#emissions" ).load( "img/animated_choropleth_emission.html");
   </script>
 
+  <hr>
+  <h2>What's to come</h2>
+
+  <p>
+    CRI, short for the Global Climate Risk Index, is a figure developed by Germanwatch with the goal of analyzing the
+    quantitative impacts of extreme weather events in terms of the cost of both human and financial losses. A country's
+    ranking, based on their number of fatalities, fatalities per 100,000 inhabitants, losses per million US$, and losses
+    per unit GDP, all resultant from these extreme weather events.
+  </p>
+
+  <div id="chartdiv"></div>
+
+  <p>
+    Predictably, most of these countries are either in warm, coastal or island regions who are frequented by tropical storms,
+    or regions subject to extreme temperatures which may causes droughts and famines. But under the surface, there is
+    more at play. The disparities, and where much of the inequality comes from in regard to who is most in danger of climate
+    change resultant events, is in how and what those losses are. Poorer, developing countries which are in danger of
+    climate disasters are at much greater risk because they lack the infrastructure to prepare for and recover from
+    these disasters compared to richer countries. If we take a look at Canada, for instance, it has a CRI
+    score of 87.33. It ranked 15th in the world in average loss in millions of US$ from 2000-2019, but 83rd in average loss
+    per unit GDP in that same time period. China had the highest cumulative financial loss from 2000-2019, but ranked 60th in
+    terms of its GDP. Rich countries are able to mitigate the damages due to their economic resources. Without
+  </p>
+
+  <p>
+    Poorer countries do not have this same luxury. These are the 10 countries that Germanwatch determined to be the most
+    at risk for frequent, or rare but catastrophic weather events that result from climate change along with their CRI
+    score, and qualitative categories.
+  </p>
+
   <div class="button-row">
     <button class="chart-button" id="cri_button" onclick="update(cri_data)" autofocus>CRI Score</button>
     <button class="chart-button" onclick="update(fatal_data)">Fatalities</button>
@@ -67,10 +97,21 @@
     <button class="chart-button" onclick="update(num_events)">Number of Events</button>
   </div>
 
-  <!-- Create a div where the graph will take place -->
   <div id="my_dataviz"></div>
 
-  <div id="chartdiv"></div>
+  <p>
+    For many of these countries, damages from climate disasters accounts for a significant part of their total GDP. Across
+    these ten, the average ranking for loss per until GDP was 21st. The positive feedback loop of loss, incomplete recovery,
+    and further loss means that many of the developing and poor countries more affected by climate change will continue to
+    sink lower in poverty. A government which is financially unable to support infrastructure to protect its citizens,
+    and unable to rebuilt when catastrophe strikes, will mean that loss of life, personal hardship, and existential threats
+    will become more and more widespread.
+  </p>
+
+
+  <!-- Create a div where the graph will take place -->
+
+
 
   <hr>
 
