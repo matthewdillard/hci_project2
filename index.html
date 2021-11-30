@@ -23,13 +23,14 @@
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+
 </head>
 
 <body>
 
 <div class="_content">
-  <h1> CLIMATE CHANGE </h1>
-  <div>Jisun Ellie Chang, Matthew Dillard, Sophia Xu</div>
+  <h1> CLIMATE CHANGE INEQUALITY </h1>
+  <div>Jisun Ellie Chang, Matthew Dillard, Sofia Xu</div>
   <hr>
 
   <h2>Who's sowing, and who's reaping</h2>
@@ -37,21 +38,17 @@
   <p>
     Climate change is an ever present worry for us all, but the reality is that the inevitable repurcussions of decades
     of pollution will disproportionately affect developing countries: those who contributed very little to the problem
-    we as a planet currently face, and do often not have the necessary infrastructure to manage the problem. Here we see
-    CO2 emissions per capita of all countries since 1990. The predictable trend we see is that richer, more developed
-    countries contributing at much higher rates than developing countries.
+    we as a planet currently face, and do often not have the necessary infrastructure to manage the problem. Taking air pollution - the combination of outdoor and indoor particulate matter, and ozone – as an example. 
   </p>
 
-  <div id="pollution"></div>
-  <script>
-    $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
-  </script>
-
-  <a class="footer" href="img/animated_choropleth_pollution.html">Pollution Choropleth</a>
+  <p>
+    From the world map of CO2 emission from 1990 - 2020 below, we see that North America, Oceania, Europe, and Latin America have disproportionately high emissions relative to their population. North America is home to only five percent of the world population but emits nearly 18 percent of CO2 (almost four times as much). Asia and Africa are underrepresented in emissions. Asia is home to 60 percent of the population but emits just 49 percent; Africa has 16 percent of the population but emits just 4 percent of CO2. This is reflected in per capita emissions; the average North American is more than 17 times higher than the average African.
+  </p>
 
   <p>
-    What we see in the CO2 contribution chart below is almost opposite to what we see in those countries most affected by
-    that same pollution.
+    We can see a predictable trend that richer, more developed countries contributing at much higher rates than developing countries. This inequality in global emissions lies at the heart of why international agreement on climate change has (and continues to be) so contentious. The richest countries of the world are home to half of the world population, and emit 86 percent of CO2 emissions. 
+  </p>
+    
   </p>
 
   <div id="emissions"></div>
@@ -60,6 +57,30 @@
   </script>
 
   <a class="footer" href="img/animated_choropleth_emission.html">Emission Choropleth</a>
+
+  <p>
+    Who is most affected by air pollution? In the interactive map below, we show death rates from pollution across the world, measured as the number of deaths per 100,000 people of a given country or region. Rates are age-standardized, meaning they assume a constant age structure of the population to allow for comparisons between countries and over time. 
+  </p>
+
+  <p> 
+    What we see in the Dealth Rate from Air Pollution map is almost opposite to what we see in the CO2 emission map - countries with the largest CO2 contribution are mostly from North America and Asia with disporportionately large
+    GDP and industry scale.  The countries with highest air pollution-related death rate are Central African Republic, Afghanistan, Papua New Guinea, Guinea, and Sierra Leone. Including these five countries, Africa and the Carribean are regions that are hit with the highest death rates. Since decades ago, multinational corporates have established factories and powerplants in such regions and continued to expand their commercial activities. To this date, the death rates have gone mostly unnoticed by developed countries.
+  </p>
+
+  <p>
+    This highlights the large differences globally: death rates in the highest burden countries are more than 100 times greater than across much of Europe and North America. The burden of air pollution tends to be greater across both low and middle income countries for two reasons: air pollution rates tend to be high in low-income countries due to a reliance on solid fuels for cooking; and outdoor air pollution tends to increase as countries industrialize and shift from low-to-middle incomes. 
+  </p>
+
+  <p>
+    Therefore, "climate inequality" is real. Disadvantaged countries that not necessarily emit a high level of air pollution suffer disproportionately from the adverse effects of climate change, resulting in greater subsequent inequality. 
+  </p>
+
+  <div id="pollution"></div>
+  <script>
+    $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
+  </script>
+
+  <a class="footer" href="img/animated_choropleth_pollution.html">Pollution Choropleth</a>
 
   <hr>
   <h2>What's to come</h2>
@@ -128,7 +149,6 @@
 
   </p>
 
-
   <div id="project_count"></div>
   <script>
     $( "#project_count" ).load( "img/choropleth_project_count.html");
@@ -136,7 +156,10 @@
   <a class="footer" href="img/choropleth_project_count.html">Project Count</a>
 
   <p>
-    GCF is a unique global platform to respond to climate change by investing in <b>low-emission and climate-resilient development. </b>
+    
+    GCF is a unique global platform to respond to climate change by investing in <b>low-emission and climate-resilient development. </b> 
+    It is the world’s largest climate fund, mandated to support developing countries raise and realize their Nationally Determined Contributions (NDC) ambitions,
+    climate plans from each country that highlight climate actions and targets.
     GCF was established by 194 governments to limit or reduce Greenhouse Gas emissions in developing countries, and to help vulnerable
     societies adapt to the impacts of climate change. The GCF serves the Paris Agreement in accordance with paragraph 8 of Article 9 of the
     Paris Agreement. The Paris Agreement also states that institutions serving the Agreement such as GCF shall aim to ensure efficient access to
@@ -151,7 +174,7 @@
   </p>
 
   <p>
-    Above is an interactive map showing GCF projects worldwide. Each GCF project varies widely differently in its purpose, industry, funding type,
+    Above is an interactive map showing GCF projects worldwide. Each GCF project varies widely differently in their purpose, industry, funding type,
     and funding value. Projects for intance are listed next including, but not limited to: promoting risk mitigation for renewable eneregy and energy efficiency
     investments in Argentia, scaling up investment in Low-Carbon Public Buildings in Bosina, The Amazon biome rebuilding in Brazil, and more.
   </p>
@@ -168,12 +191,27 @@
   </div>
 
   <p>
-  Two pie charts show major categorizations of available GCF projects. More than 3/4 of projects are funded by the public sector (80.4%), while
+  The two pie charts above categorize available GCF projects into two major elements. More than 3/4 of projects are funded by the public sector (80.4%), while
   the others are funded by the private sector (19.6%). There are three major themes among the projects: Adaptation type, mitigation type, and
-  cross-cutting type in the order of frequency.
+  cross-cutting type in the order of frequency. Adaptation projects (43.4% of total) aim to improve community and ecoystem resilience.
+  On the other hand, mitigation projects seek to reduce greenhouse gas emissions or to increase the capacity of carbon sinks. Lastly, cross-cutting
+  projects have a hybrid approach using the previous two. 
+  
   </p>
-
-
+  The GCF data shows that there are mostly one or two ongoing GCF initiatives in the available countries, with some ranging to 4. Not only that currently
+  the GCF has not gained enough coverage around the world, but also the number of projects per country is still low. Evidently, still a huge chunk of Least
+  Developed Countries are left blank in the map meaning there hasn't been an international effort to establish a GCF initaitive in the area. While the Paris Agreement
+  has several other indicators to measure its progress, the GCF, one of the major pillars of the Agreement, is not as progressing as we would like to think.
+  
+  <p>
+  While developed countries are actively holding themselves accountable to adhere to targets of the Paris Agreement, they are still overlooking the critical fact
+  that greenhouse gas emission and climate change in general cannot be noticeably improved if there is not enough international cooperation to help the most vulnerable
+  and affected countries. Much of the Paris Agreeement's sentiment lies on a self-serving pace where the main objective is to keep each country with their Nationally Determiend
+  Contributions. Developed countries must make more conscious efforts into looking at the environmental inequality happening worldwide and how they are perhaps the perpetrators
+  of inequality themselves. More actions need to be made in helping the severely impacted countries through the meeans of GCF, independent projects from corporates, and many
+  more official and unofficial means.
+    
+  </p>
   <hr>
   <div style="display: flex; align-items: center">
     <a class="references" href="https://docs.google.com/document/d/1DHf9AWghsUA8mtqB7xcLgKFIP1SxzH0QxjX5Ca6TQyo/edit?usp=sharing">References</a>
@@ -185,6 +223,9 @@
   <script type="text/javascript">
     document.getElementById("cri_button").click();
   </script>
+
+
+
 </div>
 </body>
 </html>
