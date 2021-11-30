@@ -23,6 +23,7 @@
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+
 </head>
 
 <body>
@@ -42,6 +43,13 @@
     countries contributing at much higher rates than developing countries.
   </p>
 
+  <p> The countries with highest air pollution-related death rate are Central African Republic, Afghanistan, Papua New Guinea, Guinea,
+  and Sierra Leone. Including these five countries, Africa and the Carribean are regions that are hit with the highest death rates.
+    Since decades ago, multinational corporates have established factories and powerplants in such regions and continued to expand their
+    commercial activities. To this date, the death rates have gone mostly unnoticed by developed countries.
+  
+  </p>
+  
   <div id="pollution"></div>
   <script>
     $( "#pollution" ).load( "img/animated_choropleth_pollution.html");
@@ -51,7 +59,8 @@
 
   <p>
     What we see in the CO2 contribution chart below is almost opposite to what we see in those countries most affected by
-    that same pollution.
+    that same pollution. Countries with the largest CO2 contribution are mostly from North America and Asia with disporportionately large
+    GDP and industry scale.
   </p>
 
   <div id="emissions"></div>
@@ -128,14 +137,16 @@
 
   </p>
 
-
   <div id="project_count"></div>
   <script>
     $( "#project_count" ).load( "img/choropleth_project_count.html");
   </script>
 
   <p>
-    GCF is a unique global platform to respond to climate change by investing in <b>low-emission and climate-resilient development. </b>
+    
+    GCF is a unique global platform to respond to climate change by investing in <b>low-emission and climate-resilient development. </b> 
+    It is the world’s largest climate fund, mandated to support developing countries raise and realize their Nationally Determined Contributions (NDC) ambitions,
+    climate plans from each country that highlight climate actions and targets.
     GCF was established by 194 governments to limit or reduce Greenhouse Gas emissions in developing countries, and to help vulnerable
     societies adapt to the impacts of climate change. The GCF serves the Paris Agreement in accordance with paragraph 8 of Article 9 of the
     Paris Agreement. The Paris Agreement also states that institutions serving the Agreement such as GCF shall aim to ensure efficient access to
@@ -150,7 +161,7 @@
   </p>
 
   <p>
-    Above is an interactive map showing GCF projects worldwide. Each GCF project varies widely differently in its purpose, industry, funding type,
+    Above is an interactive map showing GCF projects worldwide. Each GCF project varies widely differently in their purpose, industry, funding type,
     and funding value. Projects for intance are listed next including, but not limited to: promoting risk mitigation for renewable eneregy and energy efficiency
     investments in Argentia, scaling up investment in Low-Carbon Public Buildings in Bosina, The Amazon biome rebuilding in Brazil, and more.
   </p>
@@ -167,12 +178,27 @@
   </div>
 
   <p>
-  Two pie charts show major categorizations of available GCF projects. More than 3/4 of projects are funded by the public sector (80.4%), while
+  The two pie charts above categorize available GCF projects into two major elements. More than 3/4 of projects are funded by the public sector (80.4%), while
   the others are funded by the private sector (19.6%). There are three major themes among the projects: Adaptation type, mitigation type, and
-  cross-cutting type in the order of frequency.
+  cross-cutting type in the order of frequency. Adaptation projects (43.4% of total) aim to improve community and ecoystem resilience.
+  On the other hand, mitigation projects seek to reduce greenhouse gas emissions or to increase the capacity of carbon sinks. Lastly, cross-cutting
+  projects have a hybrid approach using the previous two. 
+  
   </p>
-
-
+  The GCF data shows that there are mostly one or two ongoing GCF initiatives in the available countries, with some ranging to 4. Not only that currently
+  the GCF has not gained enough coverage around the world, but also the number of projects per country is still low. Evidently, still a huge chunk of Least
+  Developed Countries are left blank in the map meaning there hasn't been an international effort to establish a GCF initaitive in the area. While the Paris Agreement
+  has several other indicators to measure its progress, the GCF, one of the major pillars of the Agreement, is not as progressing as we would like to think.
+  
+  <p>
+  While developed countries are actively holding themselves accountable to adhere to targets of the Paris Agreement, they are still overlooking the critical fact
+  that greenhouse gas emission and climate change in general cannot be noticeably improved if there is not enough international cooperation to help the most vulnerable
+  and affected countries. Much of the Paris Agreeement's sentiment lies on a self-serving pace where the main objective is to keep each country with their Nationally Determiend
+  Contributions. Developed countries must make more conscious efforts into looking at the environmental inequality happening worldwide and how they are perhaps the perpetrators
+  of inequality themselves. More actions need to be made in helping the severely impacted countries through the meeans of GCF, independent projects from corporates, and many
+  more official and unofficial means.
+    
+  </p>
   <hr>
   <div style="display: flex; align-items: center">
     <a class="references" href="https://docs.google.com/document/d/1DHf9AWghsUA8mtqB7xcLgKFIP1SxzH0QxjX5Ca6TQyo/edit?usp=sharing">References</a>
@@ -184,6 +210,9 @@
   <script type="text/javascript">
     document.getElementById("cri_button").click();
   </script>
+
+
+
 </div>
 </body>
 </html>
